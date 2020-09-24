@@ -16,7 +16,6 @@
 
 <script>
 import themeConfig from '@/../themeConfig.js'
-import jwt         from "@/http/requests/auth/jwt/index.js"
 
 export default {
   data() {
@@ -70,14 +69,12 @@ export default {
   },
   async created() {
 
-    // jwt
-    jwt.init()
-
     let dir = this.$vs.rtl ? "rtl" : "ltr"
     document.documentElement.setAttribute("dir", dir)
 
     window.addEventListener('resize', this.handleWindowResize)
     window.addEventListener('scroll', this.handleScroll)
+
   },
   destroyed() {
     window.removeEventListener('resize', this.handleWindowResize)

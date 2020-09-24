@@ -31,8 +31,8 @@
 
           <!-- Logo -->
           <router-link tag="div" class="vx-logo cursor-pointer flex items-center" to="/">
-            <img :src="'/images/logo/logo.png'" class="logo-png">
-            <span class="vx-logo-text text-primary" v-show="isMouseEnter || !reduce" v-if="title">{{title}}</span>
+            <logo class="w-10 mr-4 fill-current text-primary" />
+            <span class="vx-logo-text text-primary" v-show="isMouseEnter || !reduce" v-if="title">{{ title }}</span>
           </router-link>
           <!-- /Logo -->
 
@@ -66,7 +66,7 @@
 
             <!-- Group Header -->
             <span v-if="item.header && !verticalNavMenuItemsMin" class="navigation-header truncate" :key="`header-${index}`">
-              {{ $t(item.i18n) || item.header }}
+              {{ item.header }}
             </span>
             <!-- /Group Header -->
 
@@ -82,7 +82,7 @@
                 :icon="item.icon" :target="item.target"
                 :isDisabled="item.isDisabled"
                 :slug="item.slug">
-                  <span v-show="!verticalNavMenuItemsMin" class="truncate">{{ $t(item.i18n) || item.name }}</span>
+                  <span v-show="!verticalNavMenuItemsMin" class="truncate">{{ item.name }}</span>
                   <vs-chip class="ml-auto" :color="item.tagColor" v-if="item.tag && (isMouseEnter || !reduce)">{{ item.tag }}</vs-chip>
               </v-nav-menu-item>
 

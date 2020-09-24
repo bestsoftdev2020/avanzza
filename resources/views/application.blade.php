@@ -7,7 +7,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- <link rel="icon" href="<%= BASE_URL %>favicon.ico"> -->
 
-    <title>ProCuyo</title>
+    <title>Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template</title>
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset(mix('css/main.css')) }}">
     <link rel="stylesheet" href="{{ asset(mix('css/iconfont.css')) }}">
@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="{{ asset(mix('css/vuesax.css')) }}">
     <link rel="stylesheet" href="{{ asset(mix('css/prism-tomorrow.css')) }}">
     <link rel="stylesheet" href="{{ asset(mix('css/app.css')) }}">
-
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ asset('images/logo/favicon.png') }}">
   </head>

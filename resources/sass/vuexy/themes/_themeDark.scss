@@ -1245,7 +1245,20 @@
             }
           }
         }
+/*! rtl:begin:ignore */
+        .prev {
+          &:after {
+            border-right-color: $white;
+          }
+        }
+
+        .next {
+          &:after {
+            border-left-color: $white;
+          }
+        }
       }
+/*! rtl:end:ignore */
       .disabled {
         color: rgba($grey, .6);
       }
@@ -1519,27 +1532,3 @@
     }
   }
 }
-
-
-// RTL Fixes for dark mode
-/*! rtl:begin:ignore */
-.theme-dark {
-  .vdp-datepicker {
-    .vdp-datepicker__calendar {
-      header {
-        .prev {
-          &:after {
-            border-right-color: $white;
-          }
-        }
-
-        .next {
-          &:after {
-            border-left-color: $white;
-          }
-        }
-      }
-    }
-  }
-}
-/*! rtl:end:ignore */
