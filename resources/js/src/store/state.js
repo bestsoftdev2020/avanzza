@@ -46,6 +46,25 @@ const state = {
     // Can be used to get current window with
     // Note: Above breakpoint state is for internal use of sidebar & navbar component
     windowWidth: null,
+
+    initialSelectData: {
+        countries: [
+            {label: 'Colombia', value: 1},
+        ],
+        cities: [
+            {label: 'Barranquilla', value: 1},
+            {label: 'Bogotá', value: 2},
+            {label: 'Cali', value: 3},
+            {label: 'Medellín', value: 4},
+            {label: 'Soledad', value: 5},
+        ],
+        categories: [
+            {label: 'repuestos en general', value: 1},
+            {label: 'repuestos electricos', value: 2},
+            {label: 'latas, lamparas y otros', value: 3},
+            {label: 'grua', value: 4},
+        ],
+    }
 }
 
 export default state

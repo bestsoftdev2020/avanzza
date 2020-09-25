@@ -9,7 +9,7 @@
 
 // MAIN COLORS - VUESAX THEME COLORS
 let colors = {
-	primary : '#7367F0',
+	primary : '#1F6B7A',
 	success : '#28C76F',
 	danger  : '#EA5455',
 	warning : '#FF9F43',
@@ -24,7 +24,7 @@ const themeConfig = {
   hideScrollToTop   : false,       // options[Boolean] : true, false(default)
   mainLayoutType    : "vertical",  // options[String]  : vertical(default) / horizontal
   navbarColor       : "#fff",      // options[String]  : HEX color / rgb / rgba / Valid HTML Color name - (default: #fff)
-  navbarType        : "floating",  // options[String]  : floating(default) / static / sticky / hidden
+  navbarType        : "sticky",  // options[String]  : floating(default) / static / sticky / hidden
   routerTransition  : "zoom-fade", // options[String]  : zoom-fade / slide-fade / fade-bottom / fade / zoom-out / none(default)
   rtl               : false,       // options[Boolean] : true, false(default)
   sidebarCollapsed  : false,       // options[Boolean] : true, false(default)

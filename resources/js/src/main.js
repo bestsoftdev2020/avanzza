@@ -32,6 +32,10 @@ import './globalComponents.js'
 // Vue Router
 import router from './router'
 
+// VeeValidate
+import VeeValidate from 'vee-validate'
+Vue.use(VeeValidate);
+
 
 // Vuex Store
 import store from './store/store'

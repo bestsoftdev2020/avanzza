@@ -10,6 +10,7 @@
 
 import Vue from 'vue'
 import Router from 'vue-router'
+import store from './store/store'
 
 Vue.use(Router)
 
@@ -54,9 +55,14 @@ const router = new Router({
         // PAGES
         // =============================================================================
               {
-                path: '/pages/login',
-                name: 'page-login',
+                path: '/login',
+                name: 'login',
                 component: () => import('@/views/pages/Login.vue')
+              },
+              {
+                path: '/register',
+                name: 'register',
+                component: () => import('@/views/pages/register/Register.vue')
               },
               {
                 path: '/pages/error-404',
@@ -80,5 +86,13 @@ router.afterEach(() => {
         appLoading.style.display = "none";
     }
 })
+
+router.beforeEach((to, from, next) => {
+    if(!store.state.auth.login_status && to.path != '/login' && to.path != '/register') {
+        router.push({ path: '/login' })
+    }
+
+    return next()
+});
 
 export default router
